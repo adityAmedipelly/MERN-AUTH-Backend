@@ -5,7 +5,6 @@ interface JwtPayloadWithId {
   id: string;
 }
 
-
 const userAuth = async (req:Request, res:Response, next:NextFunction): Promise<void>=>{
     const {token} = req.cookies;
 
@@ -35,4 +34,4 @@ const userAuth = async (req:Request, res:Response, next:NextFunction): Promise<v
     }
 }
 
-export default userAuth
+export default userAuth;
