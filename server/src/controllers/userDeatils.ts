@@ -1,8 +1,6 @@
 import userModel from "../models/userModel";
 import { Request,Response } from "express";
 
-
-
 export const getUserData = async (req:Request,res:Response)=>{
     try{
         const {userId} = req.body;
